@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <canvas id="c" width="200" height="200"></canvas>
+    <canvas id="c" width="700" height="700"></canvas>
     <script>
         var c = document.querySelector('#c');
         var ctx = c.getContext('2d');
@@ -18,12 +18,12 @@
         image.onload = function () {
             console.log('Image Loaded');
             ctx.drawImage(image, 0, 0, c.width, c.height);
-            var savedImage = c.toDataURL();
-            window.open(savedImage);
+            ctx.strokeText=("Hello World", 50, 10);
         }
 
+    
         // Put Image link here
-        image.src = "https://i.imgur.com/4qruWKJ.jpg";
+        image.src = "https://i.imgur.com/XJKjKAK.png";
     </script>
 </body>
 
